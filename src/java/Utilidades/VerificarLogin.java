@@ -19,6 +19,7 @@ public class VerificarLogin {
     
     public static boolean comprobarLogin(String usuario,String password) throws ClassNotFoundException, SQLException{
         
+        String pruebaGit;
         boolean nRegistro = false;
         String sql="select * from logeados where usuario='"+usuario+"' AND password='"+password+"'";
         Connection con=ConexionRestaurante.conexionRestaurante();
